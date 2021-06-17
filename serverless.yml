@@ -29,7 +29,7 @@ functions:
     handler: src/functions/createTodo.handle
     events:
       - http:
-          path: /todo
+          path: /todo/{userId}
           method: POST
           cors: true
 
